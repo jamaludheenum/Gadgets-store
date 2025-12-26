@@ -3,7 +3,6 @@
 @import "tailwindcss";
 
 @theme {
-  /* This automatically creates classes like text-neon-blue and bg-neon-blue */
   --color-neon-blue: #00A3FF;
   --color-electric-purple: #7A5CFF;
   --color-soft-white: #F5F5F5;
@@ -14,7 +13,7 @@
   --font-display: "Space Grotesk", ui-sans-serif, system-ui;
 }
 
-/* Base styles in v4 */
+
 @layer base {
   body {
     background-color: var(--color-jet-black);
@@ -23,7 +22,7 @@
   }
 }
 
-/* Custom Components */
+
 @layer components {
   .nav-item {
     @apply font-sans text-[12px] font-bold uppercase tracking-[0.1em] transition-colors duration-300;
@@ -36,4 +35,5 @@
   .nav-item-active {
     @apply text-neon-blue;
   }
+  
 }
